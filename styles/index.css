@@ -1,0 +1,186 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 1vmax; 
+  }
+  header img{
+    height: 6vmax;
+      width: 7.5vmax;
+      border-radius: 2vmax;
+      border: 0.2vmax solid #000;
+      
+  }
+  
+    #logo img {
+        height: 7vmax;
+        border-radius: 2vmax;
+    }
+    #curr_category {
+        flex-grow: 1;
+        font-size: 2vmax;
+        text-align: center;
+        margin: 0;
+    }
+    #cart {
+      margin-left: auto;
+      position: relative;
+    }
+    #cart img {
+      height: 6vmax;
+      width: 7.5vmax;
+      border-radius: 2vmax;
+      border: 0.2vmax solid #000;
+    }
+
+    #cart p {
+    font-size:2vmax;
+    font-weight: bold; /* make text bold */
+    position: absolute;
+    bottom: -0.4vmax;
+    left: 0.4vmax;
+    opacity: 1; /* initially hidden */
+    border-radius: 2.5vmax;
+    border: 0.2vmax solid #000;
+    background-color: pink;
+      }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Set main flex container to column direction */
+    min-height: 100vh; /* Set minimum height of the flex container to 100% viewport height */
+    min-width: 100vw;
+    padding: 0vmax;
+  }
+
+  
+
+  #main {
+    flex: 1; /* Allow container to take up remaining space */
+    display: flex;
+    flex-direction: column; /* Set container to column direction */
+    align-items: center; /* Center align content horizontally */
+  }
+
+  #categories {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next row */
+  }
+
+  #categories h3 {
+    font-size: 2vmax;
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+  }
+  
+  /*WELCOME*/
+  #welcome {
+    position: relative;
+  }
+  
+  #welcome h2 {
+    height: auto;
+    position: absolute;
+    display: flex;
+    color: #fff;
+    top: 0%;
+    left: 0%;
+    padding: 1vw;
+    font-size: 3vmax;
+    -webkit-text-stroke: 0.2vmax #000;
+  }
+  
+  #welcome img {
+    width: 100vw;
+    height: 15vmax;
+  }
+  
+  #products {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 2.5vmax; 
+  }
+  #products img {
+    height: 15vmax;
+    width: 15vmax; 
+    margin: 2.5vmax;
+    margin-bottom: 0;
+    border-radius: 2vmax;
+  }
+
+  #products .product{
+    position: relative;
+    }
+  #products .addToCart img {
+    position: absolute;
+    top: 1.5vmax;
+    left: 1.5vmax;
+    opacity: 0; /* initially hidden */
+    width: 5vmax; /* adjust as needed */
+    height: 5vmax; /* adjust as needed */
+    border-radius: 1.5vmax;
+    border: 0.2vmax solid #000;
+  }
+  #products .addToCart p {
+    font-size:2vmax;
+    font-weight: bold; /* make text bold */
+    position: absolute;
+    bottom: 4vmax;
+    right: 4vmax;
+    opacity: 1; /* initially hidden */
+    border-radius: 2.5vmax;
+    background-color: pink;
+  }
+
+  #products .product:hover .addToCart img {
+    opacity: 1;
+  }
+  #products .product:hover .addToCart p {
+    opacity: 0;
+  }
+
+  #products h3 {
+    font-size: 1.5vmax;
+    margin-left: 2.5vmax;
+    background-color: #f8f8f8;
+    margin-right: 2.5vmax;
+    margin-top: 0.5vmax;
+    text-align: center;
+  }
+  .footer {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    background-color: #f8f8f8;
+    padding: 2vmax; /* Use vh for padding */
+  }
+  .footer p {
+    margin: 0 2vmax; /* Add spacing between paragraphs using vh */
+  }
+
+  @media only screen and (max-width: 1024px) {
+    #main {
+      position: relative;
+  }
+  
+  #categories {
+      position: absolute;
+      margin-top: 20vmax;
+      flex-direction: column;
+      border-color: #f8f8f8;
+      top: 0;
+      left: 0;
+      width: 20vw; /* adjust width of categories column as needed */
+  }
+  
+  #products {
+      margin-left: 20vw; /* adjust margin as needed */
+      margin-right: 0;
+      justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+  }
+  }

@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 1vmax; 
+  }
+  header img{
+    height: 6vmax;
+      width: 7.5vmax;
+      border-radius: 2vmax;
+      border: 0.2vmax solid #000;
+      
+  }
+  
+    #logo img {
+        height: 7vmax;
+        border-radius: 2vmax;
+    }
+    
+    #cart {
+      margin-left: auto;
+      position: relative;
+    }
+    #cart img {
+      height: 6vmax;
+      width: 7.5vmax;
+      border-radius: 2vmax;
+      border: 0.2vmax solid #000;
+    }
+
+    #cart p {
+    font-size:2vmax;
+    font-weight: bold; /* make text bold */
+    position: absolute;
+    bottom: -0.4vmax;
+    left: 0.4vmax;
+    opacity: 1; /* initially hidden */
+    border-radius: 2.5vmax;
+    border: 0.2vmax solid #000;
+    background-color: pink;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column; /* Set main flex container to column direction */
+        min-height: 100vh; /* Set minimum height of the flex container to 100% viewport height */
+        min-width: 100vw;
+        padding: 0vmax;
+      }
+      #isThatAll {
+        position: relative;
+      }
+      
+      #isThatAll h2 {
+        height: auto;
+        position: absolute;
+        display: flex;
+        color: #fff;
+        top: 0%;
+        left: 0%;
+        padding: 1vw;
+        font-size: 3vmax;
+        -webkit-text-stroke: 0.2vmax #000;
+      }
+      
+      #isThatAll img {
+        width: 100vw;
+        height: 15vmax;
+      }
+
+      #main {
+        flex: 1; /* Allow container to take up remaining space */
+        display: flex;
+        flex-direction: column; /* Set container to column direction */
+      }
+
+      #main h1 {
+        text-align: center; /* Center align content horizontally */
+        font-style: italic;
+      }
+      #main h3 {
+        text-align: center; /* Center align content horizontally */
+        font-style: italic;
+        border-radius: 1.5vmax;
+        border: 0.2vmax solid #000;
+        background-color: hwb(107 67% 0%);
+      }
+
+      #cartItems {
+        justify-content: center; /* Center the contents horizontally */
+        align-items: center; /* Center the contents vertically */
+        text-align: center; /* Center the text inside the grid item */
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+        gap: 2vmax; /* Gap between grid items */
+      }
+
+      .grid-item {
+        /* Styles for individual grid items */
+        /* For example: */
+        display: flex;
+        justify-content: center; /* Center the contents horizontally */
+        align-items: center; /* Center the contents vertically */
+        text-align: center; /* Center the text inside the grid item */
+        background-color: #ffffff;
+        padding: 2vmax;
+        border-radius: 2.5vmax;
+      }
+
+      .grid-item b {
+        margin-left: 2vmax;
+        margin-right: 2vmax;
+      }
+      
+      .grid-header {
+        /* Styles for column headers */
+        /* For example: */
+        background-color: #ffffff;
+        padding: 2vmax;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+.footer {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    background-color: #f8f8f8;
+    padding: 2vmax; /* Use vh for padding */
+  }
+  .footer p {
+    margin: 0 2vmax; /* Add spacing between paragraphs using vh */
+  }
